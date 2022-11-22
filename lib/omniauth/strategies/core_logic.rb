@@ -30,6 +30,10 @@ module OmniAuth
 
       # Overrride client to merge in site based on sandbox option
       def client
+        # Merge in client_id and secret
+        options.token_params[:client_id] = options.client_id
+        options.token_params[:client_secret] = options.client_secret
+        
         ::OAuth2::Client.new(
           options.client_id,
           options.client_secret,
