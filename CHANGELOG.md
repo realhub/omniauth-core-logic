@@ -1,3 +1,9 @@
+## [1.2.0] - 2023-02-06
+
+## Updated
+
+- Add auth scheme to options
+
 ## [1.1.0] - 2022-11-23
 
 ## Updated

@@ -15,6 +15,7 @@ module OmniAuth
       option :name, 'core_logic'
 
       option :client_options,
+             auth_scheme: :request_body,
              authorize_url: '/access/oauth/authorize',
              token_url: '/access/oauth/token'
 
